@@ -1,0 +1,4 @@
+vrf definition Internet
+address-family ipv4
+exit
+ip route vrf Internet 0.0.0.0 0.0.0.0 {{ host.facts.vrf.peer_ip }}
